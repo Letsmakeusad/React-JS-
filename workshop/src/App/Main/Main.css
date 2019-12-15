@@ -4,12 +4,14 @@
   height: auto;
   /* border:1px solid blue; */
   margin-bottom: 5%;
+  margin-left:  10%;
 }
 
 h1 {
   text-align: center;
-  color: #234465;
+  color: #f8b702;
   text-decoration: underline;
   margin-bottom: 2%;
+  
 }
 

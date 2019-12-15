@@ -29,13 +29,13 @@ export default class EditPost extends React.Component {
 
   render() {
      const {post} = this.state;
-     
+     const {user} = this.state
  
      if(post){
       return <div>
       <div className="Post">
       {post.map((post)  =>      
-        <EditPostForm id={post._id} description={post.description}></EditPostForm>
+        <EditPostForm id={post._id} description={post.description} userId={user._id}></EditPostForm>
       )
       }
  
@@ -44,7 +44,7 @@ export default class EditPost extends React.Component {
     </div>;
      }
     else{
-      return <div> KEK</div>
+      return <div>404 NO POST FOUND <img src="./book.png"></img></div>
     }
   }
 }

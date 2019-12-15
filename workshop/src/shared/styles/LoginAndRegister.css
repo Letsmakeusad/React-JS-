@@ -2,6 +2,7 @@
   width: 83%;
   display: inline-block;
   vertical-align: top; 
+  color: orange;
 }
 
 .form-control {
@@ -9,6 +10,10 @@
   margin: 0 auto;
   padding: 1%;
   text-align: center;
+}
+
+.notif {
+  margin-left: 40%;
 }
 
 label {

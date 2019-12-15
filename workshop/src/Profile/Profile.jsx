@@ -4,20 +4,18 @@ import './Profile.css';
 
 export default function Profile({user}) {
  
+  console.log(user);
    
   return <div className="Profile">
     
-    <img src="https://greendestinations.org/wp-content/uploads/2019/05/avatar-exemple.jpg" alt="profile-pic" />
+    <img src="frank.png" alt="profile-pic" />
     <div className="personal-info">
       <p>
          
          <span>Username:{user.username} </span>
-         
-         <span>Email: {user.email} </span>
-         
       </p>
       <p>
-        <span>Posts: {user.posts.length} </span>
+         <span>Scary Meter: 100</span>
          
       </p>
     </div>

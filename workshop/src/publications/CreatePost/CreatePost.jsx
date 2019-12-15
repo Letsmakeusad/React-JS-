@@ -16,7 +16,7 @@ const CreatePost = ({ history }) => {
   return <div className="CreatePost">
     <form>
       <textarea ref={textareaRef}></textarea>
-      <button type="button" onClick={createPost}>Create Post</button>
+      <button type="button" onClick={createPost}>Create Story</button>
     </form>
     
   </div>;

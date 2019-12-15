@@ -2,6 +2,8 @@ import React from 'react';
 import Post from '../Posts/Post/Post';
 import service from '../../services/post-service';
 import userService from '../../services/user-service';
+import "./Detail.css";
+import Link from "../../shared/Link/Link";
 
  
 
@@ -38,12 +40,12 @@ export default class Detail extends React.Component {
       return <div>
       <div className="Post">
       {post.map((post)  =>
-          <Post key={post._id} imageUrl="/logo192.png" imageAlt="alt" author={post.author.username} authorId={post.author._id} userId={user._id} postId={post._id}>{post.description}</Post>
+          <Post key={post._id} imageUrl="/book.png" imageAlt="alt" author={post.author.username} authorId={post.author._id} userId={user._id} postId={post._id}>{post.description}</Post>
       )
       }
  
     </div>
-      <a href="/posts">Back</a>
+      <Link to="/"><button>Back</button></Link>
     </div>;
      }
      else{

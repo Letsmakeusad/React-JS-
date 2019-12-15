@@ -4,7 +4,11 @@ import Link from '../../../shared/Link/Link';
 
 
 function Post({imageUrl, imageAlt, children, author, authorId, userId, postId}) {
-     
+  
+
+  
+
+
   if(authorId === userId)
      {
       return <div className="Post">
@@ -16,12 +20,10 @@ function Post({imageUrl, imageAlt, children, author, authorId, userId, postId}) 
           {author}
         </span>
       </div>
-       <div><Link to={`/edit-post/${postId}`}>EDIT</Link></div>
+       <div><Link to={`/edit-post/${postId}`}><button>Edit</button></Link></div>
         
       </div>;
       }
-    
-   
    else{
      
      return <div className="Post">

@@ -19,7 +19,7 @@ const Posts = ({ limit }) => {
     {posts ?
       <div className="Posts">
         {posts.map((post) =>  (
-          <Post key={post._id} imageUrl="/logo192.png" imageAlt="alt" author={post.author.username} authorId={post.author._id}>{post.description}  <Link to={`/post/${post._id}`}>Read full story</Link></Post>))}
+          <Post key={post._id} imageUrl="/book.png" imageAlt="alt" author={post.author.username} authorId={post.author._id}>{post.description}  <Link to={`/post/${post._id}`}>Read full story</Link></Post>))}
       </div> : 
       <div>Loading posts... <img id="logo" src="/loading1.png" alt="my-app-logo" /></div>
       

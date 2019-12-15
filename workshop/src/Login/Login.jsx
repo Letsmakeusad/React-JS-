@@ -5,6 +5,7 @@ import { StoreContext } from '../Store/Store';
 import { useHistory } from 'react-router-dom';
 import { login } from '../Store/actions';
 
+
 import { useFormControl, getValidationsRunnerForSchema } from '../shared/hocs/withForm';
 
 const validations = {
@@ -45,12 +46,12 @@ const Login = () => {
       <label>Username</label>
       <input type="text" onChange={usernameFormControl.changeHandler} />
     </div>
-    {usernameFormControl.errors && usernameFormControl.errors[0]}
+    <div className="notif">{usernameFormControl.errors && usernameFormControl.errors[0]}</div>
     <div className="form-control">
       <label>Password</label>
       <input type="password" onChange={passwordFormControl.changeHandler} />
     </div>
-    {passwordFormControl.errors && passwordFormControl.errors[0]}
+    <div className="notif">{passwordFormControl.errors && passwordFormControl.errors[0]}</div>
     {state.error && state.error}
     <div className="form-control">
       <button type="button" onClick={submitHandler}>Login</button>

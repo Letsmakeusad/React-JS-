@@ -5,7 +5,8 @@ import Link from '../shared/Link/Link';
 function Footer({ isLogged }) {
   return <nav className="Footer">
     <ul>
-    <img id="logo" src="/ghostR.png" alt="my-app-logo" />
+  
+    <Link to='/'>  <img id="logo" src="/hand.png" alt="my-app-logo" /></Link>
     </ul>
   </nav>;
 };

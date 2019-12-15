@@ -14,7 +14,7 @@ function Navigation({ isLogged, user }) {
       {!isLogged && <Link to="/register">Register</Link>}
       {!isLogged && <Link to="/login">Login</Link>}
       {isLogged && <Link to="/logout">Logout</Link>}
-      <Link>Scarry Stories && Friendly Ghosts Blog</Link>
+      <Link>Scary Stories && Friendly Ghosts Blog</Link>
     </ul>
   </nav>;
 };
