@@ -1,0 +1,17 @@
+.App {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.Container {
+  margin-top: 8.5%;
+  padding: 0.5%;
+  /* border: 1px solid purple; */
+  margin-bottom: 0.1%;
+  background: url(https://wallpaperaccess.com/full/1227315.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: center;
+}
